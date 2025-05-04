@@ -1,0 +1,1390 @@
+
+* {font-family: verdana, Arial, sans-serif;}
+
+/* -------------------------------------- BODY ----------------- */
+body {
+  _overflow: auto;
+  scrollbar-arrow-color: black;
+  scrollbar-base-color: #cccccc;
+  font-weight: normal;
+  font-size: 9pt;
+  margin: 0;
+  background-color: rgb(80%,80%,80%);
+}
+
+/* ------------------------------------- nezarazeno  --------- */
+/* velke okraje - top level widget */
+td.content { 
+  font-size: 9pt;
+  padding: 20px 10px 10px 4px;
+}
+
+td.content0 {
+  font-size: 9pt;
+  padding: 10px 10px 10px 4px;
+}
+
+a:link, a:visited {
+    color: black; 
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: #bb0000; 
+    text-decoration: underline;
+}
+
+.none { 
+  font-size: 9pt;
+  padding: 0px;
+}
+
+span.note {
+   white-space: nowrap;
+}
+
+.list_nowrap {
+   white-space: nowrap;
+}
+
+.title {
+  font-size: 10pt;
+  color: #990a00;
+}
+
+.normal {
+  font-size: 9pt;
+  color: #000000;
+}
+
+.frame_content {
+  font-size: 9pt;
+  padding: 10px;
+}
+
+.autocomplete {
+  font-family: verdana, Arial, sans-serif;
+  position: absolute;
+  top: 0pt;
+  left: 0pt;
+  z-index: 100;
+}
+
+img.middle, input.middle {
+  vertical-align: middle;
+}
+
+/*
+iframe.panel, iframe.panel_main, iframe.panel_wide {
+    position: absolute;
+    bottom: 17.25pt;
+    z-index: 1;
+}
+
+iframe.panel { 
+  top: 53pt; 
+  left: 1.5pt; 
+  width: 224px;
+}
+
+iframe.panel_main { 
+    top: 45.5pt;
+    left: 230px; 
+    right: 0;
+}
+
+iframe.panel_wide { 
+    top: 45.5pt;
+    left: 0; 
+    right: 0;
+    width: 100%;
+}
+*/
+
+div.panel, div.panel_main, div.panel_wide {
+    position: absolute; 
+    bottom: 17.25pt; 
+    z-index: 1; 
+}
+div.panel {top: 53pt; left: 1.5pt; width: 224px;}
+div.panel_main {top: 45.5pt; left: 230px; right: 0px;}
+div.panel_wide {top: 45.5pt; left: 0px; right: 0px; width: 100%;}
+
+.strom {
+  width: 100%;
+  height: 250px;
+  overflow: auto;
+}
+
+strong {
+  color: #bb0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ------------------------------ ZAKLADNI GRAFICKA TABULKA  ------ */
+/* rozdeleni pouzitych stylu
+ * 
+/ td.tab_tl                       / td.title1 / td.title  / td.help_title / td.help_title1 /
+/ td.logo                         / td        / td.none   /         td.help                /
+/ td.tab_l                        /
+    / td.tabulars / td.tabulars_i / 
+    / td.tabular  / td.tabular_i  / 
+    / td.tabular  / td.tabular_i  / 
+/ td.tab_bl                                               /         td.tab_br              /
+*/
+
+
+/* ---------------------------------------------------------------- */
+/* vetsi obloucek u horni listy */
+td.title, td.title1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+/* velky titulek */
+td.title { 
+  font-size: 14pt;
+  color: #fdf8e6;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: middle;
+  border-right: 1px solid white;
+  background-color: #9c0000;
+  padding-right: 10px;
+}
+
+td.tab_tl, td.tab_bl, td.tab_br {
+  background-color: #6b0a00;
+}
+
+/* tabulka - horni levy roh */
+td.tab_tl { 
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+/* tabulka - dolni levy roh */
+td.tab_bl { 
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid white;
+  padding: 0px 5px 0px 5px;
+}
+
+/* tabulka - dolni pravy roh */
+td.tab_br { 
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* tabulka - levy sloupec */
+td.tab_l { 
+  background-color: #990a00;
+  border-left: 1px solid black;
+  border-bottom: 1px solid white;
+  vertical-align: top;
+  text-align: center;
+}
+
+td.top_bar { height: 20pt; }
+
+/* --------------------------------------------- ZALOZKY ---------- */
+tr.bgcolor {
+  background-color: white;
+}
+
+td.logo {
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+
+/* maly obloucek nad ilu obrazkem */
+td.a3 {
+  background: white;
+  background-image: url(img/a3.png);   
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  vertical-align: top;
+}
+
+/* zalozka text */
+table.tabs td.tabular, td.tabulars {
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: middle;
+  border-bottom: 1px solid white;
+  padding: 5px 0px 5px 5px;
+}
+
+table.tabs td.tabular { 
+  color: white;
+}
+
+table.tabs td.tabulars { 
+  background-color: white;
+}
+
+/* zalozka sipka */
+table.tabs td.tabular_i, td.tabulars_i {
+  vertical-align: middle;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 0px 5px 0px 5px;
+}
+
+table.tabs td.tabulars_i { 
+  background-color: white;
+}
+
+/* zalozka - odkazy */
+td.tabular a:link,td.tabular a:visited {
+    color: #fdf8e6; 
+    text-decoration: none;
+}   
+
+td.tabular a:hover, td.tabular a:active {
+    color: #fff1cb; 
+    text-decoration: none;
+}   
+    
+td.tabulars a:link, td.tabulars a:visited {
+    color: black; 
+    text-decoration: none;
+}   
+
+td.tabulars a:hover, td.tabulars a:active {
+    color: #990a00; 
+    text-decoration: none;
+}   
+
+/* odkazy v title */
+a.login_webis:link, a.login_webis:visited {
+    color: #fdf8e6; 
+    text-decoration: none;
+}
+
+a.login_webis:hover, a.login_webis:active {
+    color: #fff1cb; 
+    text-decoration: none;
+}
+
+span.login_webis {
+    display: none;
+}
+
+
+/* ------------------------------------- NAPOVEDA - obsah listy ----------- */
+/* titulek napovedy */
+td.help_title, td.help_title1{
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid black;
+  border-bottom: 1px solid #fff1cb;
+  background-color: #990a00;   
+  color: #fdf8e6;
+}
+
+.help_title {
+  font-size: 11pt;
+  font-weight: bold;
+  color: #990a00;
+}
+
+
+/* titulek napovedy s pravym okrajem */
+td.help_title1 { 
+  border-right: 1px solid black;
+}
+
+/* napovedovy obsahovy sloupec, pozadi, oramovani, ... */
+td.help_content { 
+  font-size: 8pt;
+  vertical-align: top;
+  background-color: #fff1cb;
+  
+  border-left: 1px solid #ffe599;
+  border-right: 1px solid black;
+  padding: 10px 10px 10px 10px;
+}
+
+table.dialog td.help_content { border-right: 0; }
+
+
+/* zvyrazneny text v obsahove casti napovedy */
+td.help_content .help_subj {
+  font-size: 8pt; 
+  color: #bb0000;
+  font-weight: bold;
+}
+
+/* nadpis pro rozsirenou formu napovedy - samostatna stranka */
+td.help_content .help_title { 
+  font-size: 12pt;
+  font-weight: bold;
+  color: #990a00;
+}
+
+/* ---------------------------------------- NOVY LAYOUT ----------- */
+body.iframe, body.iframe_panel, body.iframe_title {
+  background-color: white;
+  padding: 0px; 
+  margin: 0px;
+}
+
+body.iframe_panel { 
+   /*background-color: #fdf8e6; test */
+   background-color: white;
+}
+
+/*------- maly iframe s datem, hodinami, ... ------- */
+body.iframe_title {
+    color: #fff1cb;
+    font-size: 7pt;
+    background-color: #6b0a00;
+}
+
+body.iframe_title a:link, body.iframe_title a:visited {
+   font-size: 7pt;
+   font-weight: bold;
+   color: #fff1cb;
+   text-decoration: none;
+}
+
+body.iframe_title a:hover, body.iframe_title a:active {
+  text-decoration: underline;
+}
+
+body.iframe_title #time, body.iframe_title #date, body.iframe_title #lang {
+  font-size: 7pt;
+  margin: 2px;
+}
+
+body.iframe_title #lang {
+  background-color: #9bb1c5;
+  color: black;
+  padding: 2px;
+}
+
+body.iframe_title img.middle {
+  vertical-align: top;
+  margin: 2px;
+}
+
+
+td.top_l {
+  background-color: #6b0a00;
+  border-bottom: 1px solid #fff1cb;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px; 
+  font-size: 8pt;
+  color: #fdf8e6;
+  font-weight: bold;
+}
+
+td.bottom_p {
+  background-color: #6b0a00;
+  padding: 2pt;
+  padding-left: 5pt;
+  padding-right: 5pt; 
+}
+
+td.top_p {
+  background-color: #6b0a00;
+  font-size: 7.2pt;  
+  color: #fdf8e6;  
+  text-align: right;
+  vertical-align: middle;
+  border-bottom: 1px solid #fff1cb;
+}
+
+img.logout {
+  margin: 2px;
+  padding-right: 5px;
+}
+
+td.icons { 
+  background-color: #990a00;
+  vertical-align: middle;
+  padding-left: 5pt;
+/*  border-top: 1px solid #fff1cb;  */
+  height: 25pt;
+  _height: 29pt;
+}
+
+img.icons {
+  vertical-align: middle;
+  margin: 0.5pt 0;
+  _margin: 0;
+}
+
+td.icons_text, td.icons_text_hover { 
+  background-color: #990a00;
+  font-size: 8pt;
+  color: white;
+  vertical-align: middle;
+  cursor: pointer;
+  _cursor: hand;
+}
+
+td.icons_text_hover { 
+  background-color: #800e05;
+}
+
+table.infoframe {
+  padding: 2px 5px 2px 2px;
+  background: #6b0a00;
+}
+
+a.infoframe:link, a.infoframe:visited {
+    font-size: 7pt;
+    font-weight: normal;
+    color: #fdf8e6; 
+    text-decoration: none;
+}   
+
+a.infoframe:hover, a.infoframe:active {
+    color: #fdf8e6; 
+    text-decoration: underline;
+}   
+
+td.infoframetext{
+    font-size: 7pt;
+    font-weight: normal;
+    color: #fdf8e6; 
+    white-space: nowrap;
+}
+
+td.panel {
+    padding: 10px 2px 2px 2px;
+    margin: 0px;
+    border-right: 1px solid #ffe599;
+    /*background-color: #fdf8e6; test */
+    background-color: white;
+}
+
+td.panel_main {
+   padding: 0px 2px 2px 2px;
+   margin: 0px;
+   background-color: white;
+}
+
+.strom {
+  width: 100%;
+  height: 250px;
+  overflow: auto;
+}
+
+.longtext {
+  display: block; 
+ /* position: absolute; */
+  left: 0;
+  right: 0;
+  top: -12.5pt;
+/*  _top: -13pt;*/
+  height: 23pt;
+  _height: 25pt;
+/*  border-top: 1px solid #fff1cb; */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ------------------------------ CHYBOVE, INFORMACNI HLASKY ---- */
+td.message, td.info {
+   padding: 0px 5px 0px 5px;
+   background: #ffde8c;
+   border: 1px solid #ffde8c;
+   border-right: 1px solid #f9c340;
+   border-bottom: 1px solid #f9c340;
+} 
+
+td.info {
+   background: #d7dff4;
+   border: 1px solid #d7dff4;
+   border-right: 1px solid #bdcdef;
+   border-bottom: 1px solid #bdcdef;
+}
+
+.message, .info {
+   font-size: 9pt;
+   font-weight: bold;
+   color: black;
+   text-align: center;
+}
+
+/* ------------------------------------------------ DIALOG ---------- */
+body.dialog {
+   background-color: rgb(80%,80%,80%);
+}
+
+body.dialog table.dialog {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+table.dialog {
+  border: 0px;
+  border-left: 1px solid black; 
+  border-right: 1px solid black;
+}
+
+table.dialog td.title { 
+  font-size: 14pt;
+  color: #fff1cb;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: middle;
+  border: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+  padding-right: 10px;
+  background-color: #9c0000;
+}
+
+body.dialog td.tab_tl { 
+  background-color: #6b0a00;
+  border: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+}
+
+body.dialog td.tab_bl { 
+  background-color: #6a0800;
+  border: 0px;
+  border-bottom: 1px solid black;
+  padding: 0px 5px 0px 5px;
+}
+
+/* vnitrek dialogu */
+body.dialog td.dialog { 
+  background-color: white; 
+  font-size: 9pt;
+  padding: 10px 10px 10px 10px;
+}
+
+body.dialog td.dialog_content { 
+  font-size: 9pt;
+  padding: 10px;
+}
+
+table.dialog td.content {
+/*  border-left: 1px solid black; */
+ background-color: white;
+ padding-left: 10px;
+}
+
+table.dialog td.help_title1 {
+  border-right: 0px;
+}
+
+table.dialog td.help_title, table.dialog td.tab_br {
+  border-bottom: 1px solid #fff1cb;
+  border-left: 1px solid white;
+}
+
+table.dialog td.tab_bl {
+  border-right: 0px;
+}
+
+table.dialog td.tab_br {
+  border-right: 0px;
+  border-bottom: 1px solid black;
+}
+
+/* ---------------------------------------- BUTTONS ------------- */
+/*NOVE*/
+
+a.button {
+    _width: 2pt;
+    cursor: pointer;
+    _cursor: hand; 
+    font-size: 8pt;
+    font-weight: bold;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: middle;
+    background: #fff1cb;
+    color: black;
+    border: 1px solid #ffde8c;
+    border-right: 1px solid #f9c340;
+    border-bottom: 1px solid #f9c340;
+    padding: 4px 4px;
+    _padding: 3px 4px;
+    margin: 0px 2px;
+    line-height: 200%;
+}
+   
+a.button:visited, a.button:link, a.button:hover, a.button:active {
+    text-decoration: none;
+    color: black;
+}
+        
+a.button.textonly {
+    _line-height: 150%;
+    text-align: center;
+}
+
+a.button img {
+    border: 0;
+    vertical-align: middle;
+    margin: 0px;
+}
+       
+a.button.both img {
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+}
+
+a.button.disabled:visited, a.button.disabled:hover, a.button.disabled:link, a.button.disabled:active {
+    background-color: rgb(95%,95%,95%);
+    border: 1px solid rgb(80%,80%,80%);
+    cursor: default;
+    _cursor: default;
+}
+
+a.button.title:visited, a.button.title:hover, a.button.title:link ,a.button.title:active {
+    background-color: #940c00;
+    border: 1px solid #521818;
+    color: white;
+}
+
+
+/* ------------------------------- INPUTS, TEXTAREA, FORM -------  */
+input {
+  margin: 1px; 
+  padding: 1px;
+}
+
+input.file {
+  margin: 0px;
+  padding: 0px;
+}
+
+input.text {
+  border: 1px solid #929ca6;
+  border-bottom: 1px solid #a4b0bc;
+  border-right: 1px solid #a4b0bc;
+  padding: 1px;
+  margin: 1px;
+/*  height: 14.25pt;*/
+}
+
+input.checkbox{
+  height: 12px;
+  width: 12px;
+  padding: 0px;
+  margin: 0px;  
+  _position: relative;
+  _top: 1px;
+}
+
+textarea, input {
+  font-size: 9pt;
+  vertical-align: middle; 
+}
+
+select {
+  font-size: 8.5pt;
+  vertical-align: middle; 
+}
+
+textarea {
+  overflow: auto;
+  border: 1px solid #929ca6;
+  border-bottom: 1px solid #a4b0bc;
+  border-right: 1px solid #a4b0bc;
+  padding: 1px;
+  margin: 1px;
+  scrollbar-arrow-color: black;
+  scrollbar-base-color: #a4b0bc;
+}
+
+textarea.fixed {
+    font-family: monospace, fixed;
+    font-size: 9pt;
+}
+
+checkbox {
+  border: 0px;
+}
+
+form {
+  margin:0px;
+}
+
+    
+/* ------------------------------------------------- FORM ------------------- */
+/* form border - bez pozadi */
+table.form, table.form_border, table.form_bold { 
+  font-size: 9pt;
+  padding: 0px 0px 0px 0px;
+}
+
+/* form border - zvyraznene pozadi */
+table.form { 
+  background-color: #fdf8e6;
+}
+
+/* form border - okraj, zvyraznene pozadi */
+table.form_border { 
+  background-color: #fdf8e6;
+  border: 1px solid #ffe599;
+}
+
+table.form_bold { 
+  background-color: #fff1cb;
+  border: 1px solid #ffe599;
+}
+
+table.form_border td.form_label {
+  font-size: 8pt;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px 2px 4px;
+  background-color: #fff1cb;
+  border-bottom: 1px solid #ffe599;
+}
+
+/* --------------------------------------------- TABSFORM - horizontalni zalozky */
+/* form label - popisek formulare */
+table.tabsform td.form_label, table.tabsform td.form_label1, table.tabsform td.form_label_a { 
+  font-size: 8pt;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px 2px 4px;
+}
+
+table.tabsform td.form_label {
+  background-color: #fff1cb; 
+}
+
+table.tabsform td.form_label1 { 
+  background-color: #ffde8c;
+  text-align: center;
+}
+
+table.tabsform td.form_label_img{
+  background-color: #ffde8c;
+  padding: 0px 0px 0px 0px;
+}
+
+/* aktivni */
+table.tabsform td.form_label_a {
+  background-color: #990a00;
+  color: #fdf8e6;
+  text-align: center;
+}
+
+table.tabsform td.form_label_a_img {
+  background-color: #990a00;
+  padding: 0px 0px 0px 0px;
+}
+
+td.form_label_a a:link,td.form_label_a a:visited {
+    color: #fdf8e6; 
+    text-decoration: none;
+}   
+
+td.form_label_a a:hover, td.form_label_a a:active {
+    color: #fff1cb; 
+    text-decoration: none;
+}   
+    
+/* -------------------------------------------------- LIST ----------- */
+table.list th {
+  font-size: 8pt;
+  color: black;
+  font-weight: bold;
+  padding: 2px 2px 2px 2px;
+  white-space: nowrap;
+}
+
+table.list tr {
+  font-size: 8pt;
+}
+
+table.list td {
+  padding: 3px;    
+  padding-top: 1px;    
+  padding-bottom: 1px;    
+}
+
+.bg_list_0, .bg_list_2 { background-color: #fdfdfd; }
+.bg_list_1 { background-color: #f4f4f4; }
+.bg_list_3 { background-color: rgb(95%,95%,95%); }
+
+.bg_list_0 td.sorting, .bg_list_2 td.sorting { background-color: #f4f4f4; }
+.bg_list_1 td.sorting { background-color: #ebebeb; }
+.bg_list_3 td.sorting { background-color: rgb(92%,92%,92%); }
+
+.list_hover { background-color: #d8d8ef; }
+.list_h, .list_h td.sorting { background-color: #ffde8c; }
+
+.border_list_0 td { border-bottom: 1px solid rgb(88%,88%,88%); }
+.border_list_1 td, .border_list_2 td, .list_hover td { border-bottom: 1px solid #eeeeee; }
+.border_list_e td, .list_h td { border-bottom: 1px solid #fdfdfd; }
+.border_list_3 td { border-bottom: 1px solid rgb(85%,85%,85%); }
+
+table.list .category {
+  font-size: 8pt; 
+  color: #bb0000;
+  font-weight: bold;   
+  text-decoration: none;
+}
+
+table.list a.category:link, table.list a.category:visited {
+    color: #bb0000;
+    text-decoration: underline;
+}   
+
+table.list a.category:hover, table.list a.category:active {
+  color: #bb0000;
+  text-decoration: underline;
+}
+
+table.list .help_subj {
+  font-size: 8pt; 
+  color: #bb0000;
+  font-weight: bold;
+}
+
+span.list_icons {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+}
+
+/*span.list_icons img.middle_pos, span.list_icons img.middle, span.list_icons
+input.middle {
+  vertical-align: middle;
+}*/
+
+span.list_icons .list_arrow, span.list_icons .list_arrow_1 {
+  position: absolute;
+  z-index: 1;
+  left: -6px;
+  top: 6px;
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+span.list_icons .list_arrow_1 {
+  top: 2px;
+  left: 3px;
+}
+
+span.list_icons img.list_icon {
+  vertical-align: middle;
+  _vertical-align: top;
+  padding: 0px;
+  margin: 0px; 
+}
+
+/* ----------------------------------------------- BIGCALENDAR ---- */
+table.bigcalendar {
+  font-size: 9pt;
+  padding: 0px 0px 0px 0px;
+  background-color: #fdf8e6;
+  border: 1px solid #ffe599;
+}  
+
+table.bigcalendar td.head{
+  font-size: 8pt;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px 2px 4px;
+  background-color: #fff1cb; 
+}
+
+/* radky v kalendari */
+table.bigcalendar td.cal_0, table.bigcalendar td.cal_1, table.bigcalendar td.cal_week,
+table.bigcalendar td.cal_h0, table.bigcalendar td.cal_h1, table.bigcalendar td.cal_hweek,
+table.bigcalendar td.cal_p0, table.bigcalendar td.cal_p1, table.bigcalendar td.cal_pweek {
+  font-size: 7.5pt;
+  background-color: rgb(95%,95%,95%);
+  padding: 3px 3px 3px 3px;
+  text-align: left;
+}
+
+table.bigcalendar td.cal_1, table.bigcalendar td.cal_p1 {
+    background-color: white;
+}
+
+table.bigcalendar td.cal_week, table.bigcalendar td.cal_pweek {
+    background-color: #eae4d2;
+}
+
+table.bigcalendar td.cal_h0, table.bigcalendar td.cal_h1 {
+    background-color: #fdf8e6; 
+    text-align: center;
+}
+
+table.bigcalendar td.cal_hweek {
+    background-color: #dad4c2; 
+    text-align: center;
+}
+
+table.bigcalendar td.cal_h0, table.bigcalendar td.cal_h1, table.bigcalendar td.cal_hweek,
+table.bigcalendar td.cal_p0, table.bigcalendar td.cal_p1, table.bigcalendar td.cal_pweek {
+  border-top: 1px solid rgb(75%,75%,75%);
+}
+
+table.bigcalendar td.cal_p0, table.bigcalendar td.cal_p1, table.bigcalendar td.cal_pweek {
+    padding: 1px 2px 3px 0px;
+    color: rgb(65%,65%,65%);
+}
+
+/* odkazy v kalendari */
+table.bigcalendar a.plus:link, table.bigcalendar a.plus:visited, table.bigcalendar a.plus:hover, table.bigcalendar a.plus:active { 
+  font-size: 7pt;
+  font-weight: normal;
+  text-decoration: underline;
+  color: rgb(65%,65%,65%);
+}
+
+table.bigcalendar a.plus:hover, table.bigcalendar a.plus:active {
+  color: rgb(100%,20%,20%);
+}
+
+/* ---------------------------------- event v BigCalendar  -------------- */
+/* umisteni udalosti */
+table.bigcalendar .event_mark {
+  font-size: 6pt;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1px 0px 1px 0px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  _overflow: visible;
+}
+
+/* odkazy v udalosti */
+table.bigcalendar tr.event a:link, table.bigcalendar tr.event a:visited {
+    font-size: 8pt;
+    color: black; 
+    text-decoration: underline;
+}   
+
+table.bigcalendar tr.event a:hover, table.bigcalendar tr.event a:active {
+    color: #aa0000;  
+    text-decoration: underline;
+}   
+
+/* udalostni box s popiskama */
+table.bigcalendar div.event {
+  position: relative;
+  bottom: 8px;
+  left: 10px;
+  text-align: left;
+}
+
+table.bigcalendar table.event, table.bigcalendar table.event_free {
+  font-size: 7.5pt;
+  background-color: rgb(100%,100%,85%);
+  border: 1px solid rgb(50%,50%,10%);
+}
+
+table.bigcalendar table.event_free {
+    background-color: white;
+}
+
+/*  --------------------------------- MALY KALENDAR ------------ */
+/* Calendar */
+table.calendar {
+  background-color: #fdf8e6;
+  border: 1px solid #ffe599;
+}
+
+table.calendar td.head {
+  font-size: 8pt;
+  color: black;
+  font-weight: bold;
+  padding: 2px 4px 2px 4px;
+  background-color: #fff1cb; 
+}
+
+table.calendar td.cal, table.calendar td.cal_s, table.calendar td.cal_wd, table.calendar td.cal_n, table.calendar td.cal_h {
+  font-size: 7.5pt;
+  background-color: #f4f4f4;
+  padding: 3px 3px 3px 3px;
+  text-align: center;
+}
+
+table.calendar td.cal_h{
+  border-bottom: 1px solid #ffe599; 
+}
+
+/* dny mimo mesic */
+table.calendar td.cal_s {color: #cdcdcd;}
+
+/* dny mimo mesic */
+table.calendar td.cal_wd {color: rgb(90%,0%,0%);}
+
+/* dnes */
+table.calendar td.cal_n {
+  color: rgb(90%,0%,0%);
+  font-weight: bold;
+}
+
+/* hlavicka */
+table.calendar td.cal_h {background-color: #fdf8e6}
+
+/* vybrane datum */
+table.calendar span.cal_date, table.bigcalendar span.cal_date {
+  border: 1px solid black;
+  padding: 2px;
+  font-weight: bold;
+  background-color: #ffde8c;
+}
+
+/*  --------------------------------- BUBBLES ------------ */
+div.bubble {
+    position: absolute;
+    border: 1px solid #686868;
+    border-top: 1px solid #8e8e8e;
+    border-left: 1px solid #8e8e8e;
+    background-color: #fdfdfd;
+    font-size: 8.5pt;
+    padding: 4px;
+    display: none;
+    z-index: 100;
+    text-align: left;
+    width: 200pt;
+    overflow: hidden;
+}
+
+/*  --------------------------------- LEGEND COLORS ------------ */
+div.legend {
+    margin: 7px;
+    font-size: 7.5pt;
+    line-height: 150%;
+}
+
+span.legend, span.legend_num {
+    padding: 0px 1px 0px 1px;
+    /*position: relative;
+    _top: 1px;*/
+    border-width: 1px;
+    border-style: solid;
+    font-size: 6pt;
+    vertical-align: baseline;
+    text-align: center;
+    _vertical-align: middle;
+}
+
+/*span.legend_num {
+    padding: 0px 3px 0px 3px;
+}*/
+
+.legend_0 {
+    border-color:rgb(20%,20%,40%);
+    background-color:rgb(80%,80%,100%);
+}
+.legend_1 {
+    border-color:rgb(20%,40%,20%);
+    background-color:rgb(80%,100%,80%);
+}
+.legend_2 {
+    border-color:rgb(40%,20%,20%);
+    background-color:#ffd8c0;
+}
+.legend_3 {
+    border-color:rgb(40%,20%,40%);
+    background-color:#f4c4f4;
+}
+.legend_4 {
+    border-color:rgb(20%,40%,40%);
+    background-color:rgb(80%,100%,100%);
+}
+.legend_5 {
+    border-color:rgb(40%,40%,20%);
+    background-color:rgb(100%,100%,80%);
+}
+
+/* ------- NOVE a inteligentnejsi styly ------- */
+
+img { border: 0px; }
+
+.center { text-align: center; }
+.left   { text-align: left; }
+.right  { text-align: right; }
+.top    { vertical-align: top; }
+.middle { vertical-align: middle; }
+.bottom { vertical-align: bottom; }
+.super  { vertical-align: super; }
+.sub    { vertical-align: sub; }
+
+.weight_normal { font-weight: normal; }
+.bold, .strong { font-weight: bold; }
+
+/* TODO - zrusit color u 'a'; tady zjednodusit */
+.em, .em:visited, a.em, a.em:visited, .em a, .em a:visited,
+    .strong, .strong:visited, .strong a, .strong a:visited { color: #bb0000; }
+
+.noteless, .noteless:visited,
+    .noteless a, .noteless a:visited { color: rgb(50%,50%,50%); }
+.noteless a:hover, a.noteless:hover { color: rgb(80%,20%,20%); }
+
+.secondary, .secondary:visited,
+    .secondary a, .secondary a:visited { color: rgb(40%,50%,75%); }
+.secondary a:hover, a.secondary:hover { color: rgb(80%,20%,20%); }
+
+.disabled { color: rgb(65%,65%,65%); }
+
+.tiny       { font-size: 3pt; }
+.xx_small   { font-size: 7pt; }
+.x_small    { font-size: 7.5pt; }
+.small      { font-size: 8pt; }
+.medium     { font-size: 8.5pt; }
+.large      { font-size: 10pt; }
+.x_large    { font-size: 12pt; }
+.xx_large   { font-size: 14pt; }
+
+.nowrap { white-space: nowrap; }
+
+.underline, .decor_underline { text-decoration: underline; }
+.decor_none, a.decor_none { text-decoration: none; }
+.decor_through, a.decor_through { text-decoration: line-through; }
+
+span.hover_underline:hover, div.hover_underline:hover { text-decoration: underline; }
+
+.pad_none, .pad_none_l { padding-left: 0px; }
+.pad_none, .pad_none_r { padding-right: 0px; }
+.pad_none, .pad_none_t { padding-top: 0px; }
+.pad_none, .pad_none_b { padding-bottom: 0px; }
+
+.pad_x_small, .pad_x_small_l { padding-left: 1px; }
+.pad_x_small, .pad_x_small_r { padding-right: 1px; }
+.pad_x_small, .pad_x_small_t { padding-top: 1px; }
+.pad_x_small, .pad_x_small_b { padding-bottom: 1px; }
+
+.pad_small, .pad_small_l { padding-left: 2px; }
+.pad_small, .pad_small_r { padding-right: 2px; }
+.pad_small, .pad_small_t { padding-top: 2px; }
+.pad_small, .pad_small_b { padding-bottom: 2px; }
+
+.pad_medium, .pad_medium_l { padding-left: 3px; }
+.pad_medium, .pad_medium_r { padding-right: 3px; }
+.pad_medium, .pad_medium_t { padding-top: 3px; }
+.pad_medium, .pad_medium_b { padding-bottom: 3px; }
+
+.pad_large, .pad_large_l { padding-left: 4px; }
+.pad_large, .pad_large_r { padding-right: 4px; }
+.pad_large, .pad_large_t { padding-top: 4px; }
+.pad_large, .pad_large_b { padding-bottom: 4px; }
+
+.pad_x_large, .pad_x_large_l { padding-left: 6px; }
+.pad_x_large, .pad_x_large_r { padding-right: 6px; }
+.pad_x_large, .pad_x_large_t { padding-top: 6px; }
+.pad_x_large, .pad_x_large_b { padding-bottom: 6px; }
+
+.pad_xx_large, .pad_xx_large_l { padding-left: 8px; }
+.pad_xx_large, .pad_xx_large_r { padding-right: 8px; }
+.pad_xx_large, .pad_xx_large_t { padding-top: 8px; }
+.pad_xx_large, .pad_xx_large_b { padding-bottom: 8px; }
+
+.margin_none, .margin_none_l { margin-left: 0px; }
+.margin_none, .margin_none_r { margin-right: 0px; }
+.margin_none, .margin_none_t { margin-top: 0px; }
+.margin_none, .margin_none_b { margin-bottom: 0px; }
+
+.margin_x_small, .margin_x_small_l { margin-left: 1px; }
+.margin_x_small, .margin_x_small_r { margin-right: 1px; }
+.margin_x_small, .margin_x_small_t { margin-top: 1px; }
+.margin_x_small, .margin_x_small_b { margin-bottom: 1px; }
+
+.margin_small, .margin_small_l { margin-left: 2px; }
+.margin_small, .margin_small_r { margin-right: 2px; }
+.margin_small, .margin_small_t { margin-top: 2px; }
+.margin_small, .margin_small_b { margin-bottom: 2px; }
+
+.margin_medium, .margin_medium_l { margin-left: 3px; }
+.margin_medium, .margin_medium_r { margin-right: 3px; }
+.margin_medium, .margin_medium_t { margin-top: 3px; }
+.margin_medium, .margin_medium_b { margin-bottom: 3px; }
+
+.margin_large, .margin_large_l { margin-left: 4px; }
+.margin_large, .margin_large_r { margin-right: 4px; }
+.margin_large, .margin_large_t { margin-top: 4px; }
+.margin_large, .margin_large_b { margin-bottom: 4px; }
+
+.margin_x_large, .margin_x_large_l { margin-left: 6px; }
+.margin_x_large, .margin_x_large_r { margin-right: 6px; }
+.margin_x_large, .margin_x_large_t { margin-top: 6px; }
+.margin_x_large, .margin_x_large_b { margin-bottom: 6px; }
+
+.margin_xx_large, .margin_xx_large_l { margin-left: 8px; }
+.margin_xx_large, .margin_xx_large_r { margin-right: 8px; }
+.margin_xx_large, .margin_xx_large_t { margin-top: 8px; }
+.margin_xx_large, .margin_xx_large_b { margin-bottom: 8px; }
+
+.border_1, .border_1_l { border-left-width: 1px; border-left-style: solid; }
+.border_1, .border_1_r { border-right-width: 1px; border-right-style: solid; }
+.border_1, .border_1_t { border-top-width: 1px; border-top-style: solid; }
+.border_1, .border_1_b { border-bottom-width: 1px; border-bottom-style: solid; }
+
+.border_form_t,
+    .border_form_tl,
+    .border_form { border-top: 1px solid #ffe599; }
+
+.border_form_l,
+    .border_form_tl,
+    .border_form { border-left: 1px solid #ffe599; }
+
+.border_form_b,
+    .border_form_br,
+    .border_form { border-bottom: 1px solid #ffe599; }
+
+.border_form_r,
+    .border_form_br,
+    .border_form { border-right: 1px solid #ffe599; }
+
+.border_input {
+    border: 1px solid #929ca6;
+    border-bottom: 1px solid #a4b0bc;
+    border-right: 1px solid #a4b0bc;
+}
+
+.border_h { border: 1px solid black; }
+.border_menu { border: 1px solid rgb(40%,40%,40%); }
+.border_window { border: 2px solid black; }
+
+.color_head, .color_head a:visited, .color_head a:hover, .color_head a:active, .color_head a { color: #fdf8e6; }
+
+.bg_page, .bg_white, .bg_menu { background-color: white; }
+.bg_black { background-color: black; }
+.bg_form { background-color: #fdf8e6; }
+.bg_form_head { background-color: #fff1cb; }
+.bg_form_head_h { background-color: #ffe599; }
+.bg_h { background-color: #ffde8c; }
+.bg_input_h, .bg_confirm { background-color: #ffffaa; }
+.bg_transparent { background-color: transparent; }
+.bg_info { background-color: #d7dff4; }
+    
+
+.collapse { border-collapse: collapse; }
+
+.float_left { float: left; }
+.float_right { float: right; }
+.float_none { float: none; }
+.clear_left { clear: left; }
+.clear_right { clear: right; }
+.clear_both { clear: both; }
+
+.pos_relative { position: relative; }
+.pos_absolute { position: absolute; }
+.pos_fixed { position: fixed; _position: absolute; }
+
+.overflow_hidden { overflow: hidden; }
+.overflow_auto { overflow: auto; }
+
+.ext_overflow_hidden, .ext_overflow_scroll {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+.ext_overflow_scroll { overflow: scroll; }
+
+.hidden { visibility: hidden; }
+
+.ext_fixed {
+    font-family: monospace, fixed;
+    font-size: 9pt;
+}
+
+.ext_window_title { background-color: #9c0000; color: #fdf8e6; }
+
+/* calendar */
+.bg_cal_head_0 { background-color: #fdf8e6; }
+.bg_cal_head_1 { background-color: #fdf8e6; }
+.bg_cal_head_h { background-color: #dad4c2; }
+.bg_cal_day_0  { background-color: rgb(95%,95%,95%); }
+.bg_cal_day_1  { background-color: white; }
+.bg_cal_day_h  { background-color: #eae4d2; }
+
+.border_cal_t,
+    .border_cal_tl,
+    .border_cal { border-top: 1px solid rgb(75%,75%,75%); }
+
+.border_cal_l,
+    .border_cal_tl,
+    .border_cal { border-left: 1px solid rgb(75%,75%,75%); }
+
+.border_cal_b,
+    .border_cal_br,
+    .border_cal { border-bottom: 1px solid rgb(75%,75%,75%); }
+
+.border_cal_r,
+    .border_cal_br,
+    .border_cal { border-right: 1px solid rgb(75%,75%,75%); }
+
+.ext_planning_full { border-color: rgb(40%,40%,40%); background-color: rgb(90%,90%,100%); }
+.ext_planning_free { border-color: rgb(40%,40%,40%); background-color: white; }
+.ext_planning_sum_free_all { border-color: rgb(40%,40%,40%); background-color: #ffde8c; }
+.ext_planning_sum_free     { border-color: rgb(40%,40%,40%); background-color: #fff1cb; }
+.ext_planning_list_hover   { background-color: #d8d8ef; }
+/* /calendar */
+
+/* mail */
+.bg_mail_0 { background-color: rgb(95%,95%,95%); }
+.bg_mail_1 { background-color: #eae4d2; }
+.bg_mail_h { background-color: #dad4c2; }
+.border_mail { border: 1px solid rgb(75%,75%,75%); }
+.border_mail_b { border-bottom: 1px solid rgb(75%,75%,75%); }
+.ext_mail_q { 
+    margin: 0px; 
+    padding: 0px; 
+    padding-left: 6pt; 
+    border-left: 2px solid rgb(60%,30%,30%); 
+}
+.ext_mail_q .ext_mail_q { border-left: 2px solid rgb(30%,60%,30%); }
+.ext_mail_q .ext_mail_q .ext_mail_q { border-left: 2px solid rgb(30%,30%,60%); }
+.ext_mail_q .ext_mail_q .ext_mail_q .ext_mail_q { border-left: 2px solid rgb(60%,30%,60%); }
+.ext_mail_q .ext_mail_q .ext_mail_q .ext_mail_q .ext_mail_q { border-left: 2px solid rgb(30%,60%,60%); }
+.ext_mail_q .ext_mail_q .ext_mail_q .ext_mail_q .ext_mail_q .ext_mail_q { border-left: 2px solid rgb(60%,60%,30%); }
+
+.bg_mail_unseen { background-color: rgb(238,238,255); }
+.bg_mail_unseen td.sorting { background-color: rgb(228,228,245); }
+.border_mail_unseen td { border-bottom: 1px solid rgb(220,220,238); }
+.border_mail_unseen td.sorting { border-bottom: 1px solid rgb(215,215,232); }
+.border_mail_unseen_0 td { border-bottom: 1px solid rgb(85%,85%,85%); }
+
+/* /mail */
+
+.cursor_pointer {
+    cursor: pointer;
+    _cursor: hand;
+}
+
+.cursor_default { cursor: default; }
+
+.ext_read_only { 
+    background: rgb(238,238,238);
+    color: rgb(25%,25%,25%);
+}
+
+.border_0 { border: 0px; }
+.width_100 { width: 100%; }
+.height_100 { height: 100%; }
+
+.right_0 { right: 0px; }
+.left_0 { left: 0px; }
+.top_0 { top: 0px; }
+.bottom_0 { bottom: 0px; }
+
+.display_none { display: none; }
+
+.green {
+  color: #00bb00;
+}
+
+
